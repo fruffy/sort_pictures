@@ -1,7 +1,13 @@
 [project]
 name = "sort-folders"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "A Python script to organize image files based on their creation date, extracted primarily from EXIF metadata or secondarily from specific filename patterns. It renames dated files, handles duplicates, and places them into yearly subfolders."
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "hachoir>=3.3.0",
+    "imagehash>=4.3.2",
+    "piexif>=1.1.3",
+    "pillow>=11.1.0",
+    "tqdm>=4.67.1",
+]
